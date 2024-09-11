@@ -4,8 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudiantes</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
+<body  class="main-layout">
+    <section class="sidebar">
+        <h2 class="sidebar_title">Trabajo practico 1</h2>
+        <ul>
+            <li class="menu_item "><a href="../index.html" >Pagina principal</a></li>
+            <li class="menu_item active"><a href="#" >Alumnos</a></li>
+        </ul>
+    </section>
+    <section class="content">
+        <div class=" box_title">
+            <h2 class="title">Alumnos</h2>
+            <a href="./students_form.html" class="button">Agregar</a>
+        </div>
+        <div class="container">
+            <section>
+                <form onsubmit="" class="form_search">
+                    <input type="text" placeholder="Buscar por apellido" required>
+                    <button>Buscar</button>
+                </form>
+            </section>
     
+            <section class = "table__body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Legajo</th>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody id="table">
+
+                        <tr>
+                            <td>1</td>
+                            <td>Algo</td>
+                            <td>algo</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Algo</td>
+                            <td>algo</td>
+                        </tr>
+                    </tbody>
+    
+                </table>
+            </section>
+            <div class="paginacion">
+                <p>Items por página: </p>
+                <select name="paginacion__select" id="paginacion">
+                    <option value="3">3</option>
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+                <div id="items"><button class="button_paginacion">1</button></div>
+            </div>
+        </div>
+    </section>
+
+        
+
+   
+
 </body>
 </html>

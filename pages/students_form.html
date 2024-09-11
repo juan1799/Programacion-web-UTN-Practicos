@@ -3,9 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario estudiantes</title>
+    <title>Estudiantes</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
-<body>
-    
-</body>
-</html>
+<body  class="main-layout">
+    <section class="sidebar">
+        <h2 class="sidebar_title">Trabajo practico 1</h2>
+        <ul>
+            <li class="menu_item "><a href="../index.html" >Pagina principal</a></li>
+            <li class="menu_item active"><a href="./students.html" >Alumnos</a></li>
+        </ul>
+    </section>
+    <section class="content">
+        <div class=" box_title">
+            <h2 class="title">Agregar alumnos</h2>
+            <a href="./students.html" class="button atras">Atras</a>
+        </div>
+        <div class="container">
+            <form onsubmit="" class="form">
+                <div class="form-item">
+                    <label for="nombre">Nombre: </label>
+                    <label for="apellido">Apellido: </label>
+                    <button type="submit" class="button button-add">Agregar</button>
+                </div>
+                <div class="form-item">
+                    <input type="text" id="nombre" required>
+                    <input type="text" id="apellido" required>
+                </div>
+
+            </form>
+        </div>
+    </section>
