@@ -11,7 +11,7 @@
         <h2 class="sidebar_title">Trabajo practico 1</h2>
         <ul>
             <li class="menu_item "><a href="../index.html" >Pagina principal</a></li>
-            <li class="menu_item active"><a href="#" >Alumnos</a></li>
+            <li class="menu_item active-layout"><a href="#" >Alumnos</a></li>
         </ul>
     </section>
     <section class="content">
@@ -21,9 +21,9 @@
         </div>
         <div class="container">
             <section>
-                <form onsubmit="" class="form_search">
-                    <input type="text" placeholder="Buscar por apellido" required>
-                    <button>Buscar</button>
+                <form onsubmit="search(event)" class="form_search">
+                    <input type="text" placeholder="Buscar por apellido" id="searchByLastName" required>
+                    <button type="submit">Buscar</button>
                 </form>
             </section>
     
@@ -39,37 +39,23 @@
     
                     <tbody id="table">
 
-                        <tr>
-                            <td>1</td>
-                            <td>Algo</td>
-                            <td>algo</td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Algo</td>
-                            <td>algo</td>
-                        </tr>
                     </tbody>
     
                 </table>
             </section>
             <div class="paginacion">
                 <p>Items por página: </p>
-                <select name="paginacion__select" id="paginacion">
+                <select name="pagination-select" id="pagination-select" onchange="paginationSelect()">
                     <option value="3">3</option>
                     <option value="5">5</option>
                     <option value="10">10</option>
                     <option value="15">15</option>
                     <option value="20">20</option>
                 </select>
-                <div id="items"><button class="button_paginacion">1</button></div>
+                <div class="items" id="items"><button class="button_paginacion"></button></div>
             </div>
         </div>
     </section>
-
-        
-
-   
-
 </body>
+<script src="../scripts/table-students.js"></script>
 </html>
