@@ -38,7 +38,7 @@ const renderTable = (list) => {
 
     tbody.innerHTML = '';
 
-    list.map((student, index)=>{
+    list.map((student)=>{
         const row = document.createElement('tr');
         row.setAttribute('key',student.fileNumber);
         row.innerHTML = `<td>${student.fileNumber}</td>
@@ -70,7 +70,8 @@ if(studentsLS) {
 
 const search = (e) => {
     e.preventDefault();
-    const list = students.filter((person) => person.lastName.toLocaleLowerCase().includes(document.getElementById('searchByLastName').value.toLocaleLowerCase()) )
+    const inputSearch= document.getElementById('searchByLastName').value.toLocaleLowerCase(); 
+    const list = students.filter((person) => person.lastName && person.lastName.toLocaleLowerCase().includes(inputSearch));
 
     document.getElementById('searchByLastName').value = null;
 
