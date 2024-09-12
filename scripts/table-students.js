@@ -76,8 +76,9 @@ const search = (e) => {
     document.getElementById('searchByLastName').value = null;
 
     renderTable(list)
-    
 }
+
+const controlSearch = ()=>{}
 
 const paginationSelect = () =>{
     const option = document.getElementById('pagination-select').value;
